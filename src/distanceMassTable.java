@@ -66,6 +66,16 @@ public class distanceMassTable {
             } else if (height <= 41) {
                 mass = 2.1;
             }
+        } else if (length <=9) {
+            if (height <= 11){
+                mass = 7.6;
+            } else if (height <= 19) {
+                mass = 7.5;
+            } else if (height <= 24) {
+                mass = 7.2;
+            } else if (height <= 26) {
+                mass = 6.5;
+            }
         }
     }
 
