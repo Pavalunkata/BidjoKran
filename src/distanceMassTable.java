@@ -174,7 +174,31 @@ public class distanceMassTable {
             } else if (height <= 31) {
                 mass = 1.1;
             }
-        }    
+        } else if (length <= 28) {
+            if (height <= 19) {
+                mass = 1;
+            } else if (height <= 29) {
+                mass = 1;
+            }
+        } else if (length <= 30) {
+            if (height <= 14) {
+                mass = 0.9;
+            } else if (height <= 27) {
+                mass = 0.8;
+            }
+        } else if (length <= 32) {
+            if (height <= 24) {
+                mass = 0.7;
+            }
+        } else if (length <= 34) {
+            if (height <= 21) {
+                mass = 0.6;
+            }
+        } else if (length <= 36) {
+            if (height <= 16) {
+                mass = 0.5;
+            }
+        }
     }
 
 }
