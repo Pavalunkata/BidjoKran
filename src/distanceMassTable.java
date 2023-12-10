@@ -1,8 +1,6 @@
 public class distanceMassTable {
-    public static void main(String[] args) {
+    public static double massLimit(double length, double height) {
         double mass = 0;
-        double length = 0;
-        double height = 0;
 
         if (length <= 2.5){
             if (height <= 9){
@@ -199,6 +197,7 @@ public class distanceMassTable {
                 mass = 0.5;
             }
         }
+        return mass;
     }
 
 }
