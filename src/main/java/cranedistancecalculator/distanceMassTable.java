@@ -1,6 +1,6 @@
 package cranedistancecalculator;
 
-public class distanceMassTable {
+public class DistanceMassTable {
     public static double massLimit(double distance, double height) {
         double mass = 0;
 
