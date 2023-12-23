@@ -14,11 +14,7 @@ public class BidjoKranApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(BidjoKranApplication.class, args);
 	}
-	@GetMapping("/hello")
-	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return String.format("Hello %s!", name);
-	}
-
+	
 	@GetMapping("/distance")
 	public String distance(@RequestParam(name = "distance", required = false) Double distance,
 						   @RequestParam(name = "height", required = false) Double height) {
