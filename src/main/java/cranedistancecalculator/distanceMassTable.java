@@ -1,3 +1,5 @@
+package cranedistancecalculator;
+
 public class distanceMassTable {
     public static double massLimit(double length, double height) {
         double mass = 0;
