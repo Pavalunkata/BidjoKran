@@ -17,10 +17,10 @@ public class BidjoKranApplication {
 	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return String.format("Hello %s!", name);
 	}
-
-	@RequestMapping("/")
-	public String home() {
-		return "home.html";
-	}
+//
+//	@GetMapping("/")
+//	public String home() {
+//		return "index";
+//	}
 
 }
