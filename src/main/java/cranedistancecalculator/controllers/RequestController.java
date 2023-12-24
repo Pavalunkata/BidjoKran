@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class RequestController {
-    @RequestMapping(value = "/",
+    @RequestMapping(value = "/smt",
             method = RequestMethod.GET)
     @ResponseBody
     public String index(@RequestParam(name = "distance", required = false) Double distance,
