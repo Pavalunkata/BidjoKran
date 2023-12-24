@@ -12,12 +12,13 @@ public class RequestController {
     @RequestMapping(value = "/",
             method = RequestMethod.GET)
     @ResponseBody
-    public String distance(@RequestParam(name = "distance", required = false) Double distance,
+    public String index(@RequestParam(name = "distance", required = false) Double distance,
                            @RequestParam(name = "height", required = false) Double height) {
         if (distance != null && height != null) {
             double mass = DistanceMassTable.massLimit(distance, height);
-            return "Максимално тегло: " + mass;
-        } else {
+            return String.format("Максимално тегло: %.01f тона", mass);
+        }
+        else {
             return "index";
         }
     }
