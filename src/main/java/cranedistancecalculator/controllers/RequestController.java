@@ -9,17 +9,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class RequestController {
-    @RequestMapping(value = "/distance",
+    @RequestMapping(value = "/",
             method = RequestMethod.GET)
     @ResponseBody
-    //@GetMapping(value = "/distance")
     public String distance(@RequestParam(name = "distance", required = false) Double distance,
                            @RequestParam(name = "height", required = false) Double height) {
         if (distance != null && height != null) {
             double mass = DistanceMassTable.massLimit(distance, height);
-            return "" + mass;
+            return "Максимално тегло: " + mass;
         } else {
-            return "index.html";
+            return "index";
         }
     }
     @RequestMapping(value = "/error",
