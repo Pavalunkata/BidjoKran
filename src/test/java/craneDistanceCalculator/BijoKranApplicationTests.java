@@ -1,4 +1,4 @@
-package cranedistancecalculator;
+package craneDistanceCalculator;
 
 
 import org.springframework.boot.SpringApplication;

@@ -1,4 +1,4 @@
-package cranedistancecalculator;
+package craneDistanceCalculator;
 
 public class DistanceMassTable {
     public static double massLimit(double distance, double height) {
